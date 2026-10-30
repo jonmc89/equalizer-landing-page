@@ -13,3 +13,41 @@
   --white: #fcfaf9;
   --slate: #191826;
 }
+
+/* || Main Styles */
+
+body {
+  background-color: var(--white);
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 4rem 1.25rem;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
+  color: var(--slate);
+
+  h1 {
+    width: 13ch;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: -0.0625rem;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+  }
+}
