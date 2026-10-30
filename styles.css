@@ -19,6 +19,8 @@
 body {
   position: relative;
   background-color: var(--white);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
@@ -66,10 +68,32 @@ body {
 
 /* Mobile Illustration */
 
+.mobile-illustration {
+  position: relative;
+}
+
 .mobile-illustration-top {
+  display: flex;
+  justify-content: center;
   background-color: var(--slate);
+  padding: 0 1.25rem;
   width: 100%;
   height: 23.75rem;
+  overflow: clip;
+}
+
+.mobile-phone-image {
+  position: absolute;
+  top: -8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 13.0606rem;
+  height: 26.875rem;
+}
+
+.illustration-bg-image {
+  width: 19.5rem;
+  height: 29.25rem;
 }
 
 .mobile-illustration-bottom {
