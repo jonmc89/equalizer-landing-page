@@ -17,8 +17,19 @@
 /* || Main Styles */
 
 body {
+  position: relative;
   background-color: var(--white);
   font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.main-bg-pattern {
+  position: absolute;
+  top: -12rem;
+  left: 5rem;
+  background-image: url(./assets/bg-main-mobile.png);
+  background-size: cover;
+  width: 30rem;
+  height: 50rem;
 }
 
 /* Hero */
