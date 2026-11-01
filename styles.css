@@ -61,10 +61,11 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 2.5rem;
+  z-index: 99;
+  min-width: 20rem;
   color: var(--slate);
 
   h1 {
-    width: 13ch;
     font-weight: 700;
     font-size: clamp(2.5rem, 8vw, 5.5rem);
     line-height: 100%;
@@ -72,8 +73,9 @@ body {
   }
 
   p {
+    padding-right: 1rem;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 150%;
   }
 }
@@ -257,8 +259,6 @@ footer {
 
 /* || Media Queries */
 
-/* Tablet View */
-
 @media screen and (min-width: 48rem) {
   .main-bg-pattern {
     top: 0rem;
@@ -313,7 +313,7 @@ footer {
     transform: translateX(0);
     border-radius: 1rem;
     padding: 3rem;
-    width: 22.25rem;
+    width: 20rem;
     height: 39.25rem;
   }
 
@@ -328,12 +328,18 @@ footer {
 }
 
 @media screen and (min-width: 64rem) {
+  body {
+    margin: auto;
+    width: min(100%, 1440px);
+  }
+
   .main-bg-pattern {
     background-image: url(./assets/bg-main-desktop.png);
   }
   /* Hero */
 
   .hero {
+    margin-block-end: 20rem;
     padding: 4rem 5rem;
 
     h1 {
