@@ -376,6 +376,12 @@ footer {
   /* Footer */
 
   footer {
+    align-items: flex-start;
     padding: 0 5rem 5rem 5rem;
+  }
+
+  .footer-text-container {
+    flex-direction: row;
+    gap: 15rem;
   }
 }
